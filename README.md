@@ -33,6 +33,19 @@ No Redis. No Horizon. Just your existing `jobs` and `failed_jobs` tables.
 
 ---
 
+## Screenshots
+
+### Dashboard
+![Dashboard](/.github/screenshots/dashboard.png)
+
+### Successful Jobs — with execution time tracking
+![Success Jobs](/.github/screenshots/success-jobs.png)
+
+### Failed Jobs — with exception messages and actions
+![Failed Jobs](/.github/screenshots/failed-jobs.png)
+
+---
+
 ## Requirements
 
 - PHP 8.1 or higher
