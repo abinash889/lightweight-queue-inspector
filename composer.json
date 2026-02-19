@@ -1,0 +1,45 @@
+{
+    "name": "abinashbhatta/lightweight-queue-inspector",
+    "description": "A lightweight debugging dashboard for Laravel applications using the database queue driver",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abinash Bhatta",
+            "email": "abinash889@email.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/support": "^10.0|^11.0",
+        "illuminate/database": "^10.0|^11.0",
+        "illuminate/queue": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AbinashBhatta\\QueueInspector\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AbinashBhatta\\QueueInspector\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AbinashBhatta\\QueueInspector\\QueueInspectorServiceProvider"
+            ],
+            "aliases": {
+                "QueueInspector": "AbinashBhatta\\QueueInspector\\Facades\\QueueInspector"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
