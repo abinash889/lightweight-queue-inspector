@@ -283,16 +283,75 @@ Laravel automatically loads your customised versions instead of the package defa
 
 ## Changelog
 
-### v1.0.0 — Initial Release
+### v1.0.1 — Initial Release
 - Dashboard with stats summary
 - Pending jobs list with payload viewer
-- Failed jobs list with retry and delete actions
-- Success jobs list with execution metrics
+- Failed jobs with retry and delete actions
+- Success jobs with execution time and memory tracking
 - Automatic execution tracking via queue events
 - Installation warnings system
-- Auth misconfiguration detection with friendly browser error page
+- Auth misconfiguration detection
 - Facade support
-- Configurable path, middleware, and table names
+- Laravel 10, 11, 12 compatible
+
+---
+
+## Roadmap — Coming Soon
+
+These features are planned for upcoming versions.
+Community contributions are welcome!
+
+| Feature | Version | Status |
+|---|---|---|
+| Auto refresh dashboard every X seconds | v1.1.0 | 🔜 Planned |
+| Job scheduling — see scheduled jobs | v1.1.0 | 🔜 Planned |
+| Email/Slack notification when job fails | v1.1.0 | 🔜 Planned |
+| Dark mode support | v1.2.0 | 🔜 Planned |
+| Export failed jobs to CSV | v1.2.0 | 🔜 Planned |
+| Processing jobs page (currently running) | v1.2.0 | 🔜 Planned |
+| Job attempt history per job UUID | v1.3.0 | 🔜 Planned |
+| Charts — job trends over time | v1.3.0 | 🔜 Planned |
+| Multi-connection support | v2.0.0 | 💭 Considering |
+
+---
+
+## Contributing
+
+Contributions are welcome and appreciated!
+
+1. Fork the repository
+2. Create a feature branch
+```bash
+   git checkout -b feature/your-feature-name
+```
+3. Make your changes
+4. Commit with a clear message
+```bash
+   git commit -m "feat: add your feature description"
+```
+5. Push to your fork
+```bash
+   git push origin feature/your-feature-name
+```
+6. Open a Pull Request on GitHub
+
+Please make sure your code follows the existing style
+and all existing tests still pass.
+
+---
+
+## Bug Reports & Feature Requests
+
+Found a bug? Have a feature idea?
+
+👉 **Open an issue on GitHub:**
+https://github.com/abinash889/lightweight-queue-inspector/issues
+
+Please include:
+- Laravel version
+- PHP version
+- Steps to reproduce (for bugs)
+- Expected vs actual behaviour
 
 ---
 
