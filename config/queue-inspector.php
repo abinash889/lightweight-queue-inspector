@@ -20,7 +20,7 @@ return [
     | You can add more middleware here like 'auth:sanctum' or custom ones.
     |
     */
-    'middleware' => ['web'],
+    'middleware' => ['web', 'auth'],
 
     /*
     |--------------------------------------------------------------------------
